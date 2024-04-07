@@ -2197,6 +2197,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "throw_statement"
+        },
+        {
+          "type": "SYMBOL",
           "name": "go_statement"
         },
         {
@@ -2623,6 +2627,27 @@
         {
           "type": "STRING",
           "value": "return"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "expression_list"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        }
+      ]
+    },
+    "throw_statement": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "throw"
         },
         {
           "type": "CHOICE",
@@ -6907,4 +6932,3 @@
     "_simple_statement"
   ]
 }
-

@@ -1,16 +1,15 @@
 [package]
-name = "tree-sitter-go"
-description = "Go grammar for tree-sitter"
-version = "0.20.0"
+name = "tree-sitter-goto"
+description = "Goto grammar for tree-sitter"
+version = "0.0.1"
 authors = [
-	"Max Brunsfeld <maxbrunsfeld@gmail.com>",
-	"Douglas Creager <dcreager@dcreager.net>",
+	"Antonius Naumann <git@antonius.dev>",
 ]
 license = "MIT"
 readme = "bindings/rust/README.md"
-keywords = ["incremental", "parsing", "go"]
+keywords = ["incremental", "parsing", "go", "goto"]
 categories = ["parsing", "text-editors"]
-repository = "https://github.com/tree-sitter/tree-sitter-go"
+repository = "https://github.com/goto-lang/tree-sitter-goto"
 edition = "2018"
 autoexamples = false
 
