@@ -866,6 +866,7 @@ module.exports = grammar({
       repeat(choice(
         $._interpreted_string_literal_basic_content,
         $.escape_sequence,
+        $.format_arg,
       )),
       token.immediate('"'),
     ),
@@ -881,6 +882,8 @@ module.exports = grammar({
         /U[0-9a-fA-F]{8}/,
       ),
     )),
+
+    format_arg: $ => seq('\\(', $._expression, ')'),
 
     int_literal: _ => token(intLiteral),
 

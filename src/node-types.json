@@ -1048,6 +1048,21 @@
     }
   },
   {
+    "type": "format_arg",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "_expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "func_literal",
     "named": true,
     "fields": {
@@ -1457,6 +1472,10 @@
       "types": [
         {
           "type": "escape_sequence",
+          "named": true
+        },
+        {
+          "type": "format_arg",
           "named": true
         }
       ]
@@ -2700,6 +2719,10 @@
   },
   {
     "type": "[",
+    "named": false
+  },
+  {
+    "type": "\\(",
     "named": false
   },
   {
