@@ -457,6 +457,7 @@ module.exports = grammar({
       $._declaration,
       $._simple_statement,
       $.return_statement,
+      $.throw_statement,
       $.go_statement,
       $.defer_statement,
       $.if_statement,
@@ -547,6 +548,8 @@ module.exports = grammar({
     goto_statement: $ => seq('goto', alias($.identifier, $.label_name)),
 
     return_statement: $ => seq('return', optional($.expression_list)),
+
+    throw_statement: $ => seq('throw', optional($.expression_list)),
 
     go_statement: $ => seq('go', $._expression),
 

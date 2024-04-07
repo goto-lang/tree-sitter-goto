@@ -90,6 +90,7 @@
   "package"
   "range"
   "return"
+  "throw"
   "select"
   "struct"
   "switch"
