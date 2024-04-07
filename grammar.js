@@ -1,6 +1,6 @@
 /**
- * @file Go grammar for tree-sitter
- * @author Max Brunsfeld
+ * @file Goto grammar for tree-sitter
+ * @author Max Brunsfeld, modified by Antonius Naumann
  * @license MIT
  */
 
@@ -68,7 +68,7 @@ const
   imaginaryLiteral = seq(choice(decimalDigits, intLiteral, floatLiteral), 'i');
 
 module.exports = grammar({
-  name: 'go',
+  name: 'goto',
 
   extras: $ => [
     $.comment,
