@@ -883,7 +883,8 @@ module.exports = grammar({
       ),
     )),
 
-    format_arg: $ => seq('\\(', $._expression, ')'),
+    format_arg: $ => seq('\\(', $._expression, $.closing_format_paren),
+    closing_format_paren: _ => ')',
 
     int_literal: _ => token(intLiteral),
 

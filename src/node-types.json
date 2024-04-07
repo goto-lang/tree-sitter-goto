@@ -601,6 +601,11 @@
     }
   },
   {
+    "type": "closing_format_paren",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "communication_case",
     "named": true,
     "fields": {
@@ -1052,11 +1057,15 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "types": [
         {
           "type": "_expression",
+          "named": true
+        },
+        {
+          "type": "closing_format_paren",
           "named": true
         }
       ]

@@ -108,6 +108,7 @@
 ] @string
 
 (escape_sequence) @escape
+(format_arg) @escape
 
 [
   (int_literal)

@@ -4622,10 +4622,14 @@
           "name": "_expression"
         },
         {
-          "type": "STRING",
-          "value": ")"
+          "type": "SYMBOL",
+          "name": "closing_format_paren"
         }
       ]
+    },
+    "closing_format_paren": {
+      "type": "STRING",
+      "value": ")"
     },
     "int_literal": {
       "type": "TOKEN",
